@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Payment - Sage University</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .profile p {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .header .profile img {
+            border-radius: 50%;
+            height: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2A66B7;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .form-section {
+            background-color: #e0f3ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-section input, .form-section select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .student-details {
+            margin-top: 10px;
+            color: #333;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .student-details strong {
+            color: #000;
+        }
+
+        .student-details span {
+            color: #dc3545;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #dfe9f2;
+            color: #333;
+            font-weight: bold;
+        }
+
+        table td {
+            background-color: #fff;
+        }
+
+        .note {
+            font-size: 12px;
+            color: red;
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px solid #ffeeba;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .note p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        /* Button Styling */
+        .proceed-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .proceed-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Mobile Styling */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            table th, table td {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .student-details, .form-section input, .form-section select {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="sage/sage logo.png" alt="Sage University Logo" class="logo-img">
+        </div>
+        <div class="header-info">
+            <p>Scholar No. <span>26327</span> | Class <span>B.Tech Computer Engineering (SE) III Semester, SEC- A</span></p>
+        </div>
+        <div class="profile">
+            <p>SUMIT KIKARIYA</p>
+            <img src="sage/pro.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+    </div>
+    
+
+<div class="container">
+    <h2>Online Fees Payment</h2>
+
+    <div class="form-section">
+        <label for="date">Date</label>
+        <input type="text" id="date" value="22-Oct-2024" disabled>
+
+        <label for="rcpt">Rcpt/Chln No.</label>
+        <input type="text" id="rcpt" value="56721" disabled>
+
+        <label for="due">Due Upto</label>
+        <select id="due">
+            <option>22-Oct-2024</option>
+        </select>
+    </div>
+
+    <div class="student-details">
+        <p><strong>Name:</strong> SUMIT KIKARIYA :: <strong>Father's Name:</strong> MUKAM SINGH KIKARIYA :: <strong>Class-Section:</strong> B.Tech Computer Engineering (SE) III Semester - A :: <strong>Adm. Dt.:</strong> <span>15-Sep-2023</span></p>
+        <p><strong>Serial No:</strong> 26327 <strong>Scholar No:</strong> Sage/23/07875 <strong>Enrollment No:</strong> 23ADV3STL0037</p>
+        <p><strong>Fees Type:</strong> <input type="checkbox" checked> Next Year</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sr</th>
+                <th>Head Name</th>
+                <th>Due Amount</th>
+                <th>Rec. Amount</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tuition Fee - 2024-25</td>
+                <td>₹75,000.00</td>
+                <td>₹75,000.00</td>
+                <td>B.Tech Computer Engineering</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Bus - 2024-25</td>
+                <td>₹21,000.00</td>
+                <td>₹21,000.00</td>
+                <td>2024-2025 Due</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <p><strong>Note:</strong></p>
+        <p>1. If you are paying through Debit/Credit Card, the transaction will be reflected in your ERP Login after 1 working day.</p>
+        <p>2. If you are paying through Net Banking, the transaction will be reflected in your ERP Login after 2 working days.</p>
+    </div>
+
+    <button class="proceed-btn">Proceed to Payment</button>
+    
+    <br><button 
+    class="Exit">Exit</button>
+    <br>
+    <button class="proceed">Verification for unsuccessful payment</button>
+</div>
+
+</body>
+</html>
